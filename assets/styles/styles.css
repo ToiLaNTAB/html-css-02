@@ -48,6 +48,15 @@ a {
      word-break: break-all;
 }
 
+.heading {
+     font-family: Sen;
+     font-size: 3.8rem;
+     font-weight: 700;
+     line-height: 1.26;
+     letter-spacing: -0.02em;
+     color: var(--color-primary-text);
+}
+
 html {
      font-size: 62.5%;
 }
@@ -66,6 +75,7 @@ body {
 .fixed {
      position: sticky;
      top: -26px;
+     z-index: 999;
 }
 
 .header .container {
@@ -287,14 +297,6 @@ body {
      justify-content: space-between;
      align-items: center;
 }
-.popular .popular-top .heading {
-     font-family: Sen;
-     font-size: 3.8rem;
-     font-weight: 700;
-     line-height: 1.26;
-     letter-spacing: -0.02em;
-     color: var(--color-primary-text);
-}
 
 .popular .popular-top .desc {
      margin-top: 16px;
@@ -477,4 +479,72 @@ body {
      font-weight: 400;
      line-height: 1.54;
      color: #ffffff;
+}
+
+.features {
+     margin-top: 200px;
+}
+
+.features .body {
+     display: flex;
+     justify-content: space-between;
+}
+
+.features .image {
+     display: flex;
+     gap: 0 30px;
+}
+
+.features .image img {
+     width: 270px;
+     height: 404px;
+     border-radius: 16px;
+     object-fit: cover;
+}
+
+.features .image img:first-child {
+     margin-top: 34px;
+}
+
+.features .main-content {
+     width: 40.17%;
+     display: flex;
+     flex-direction: column;
+     align-items: start;
+     justify-content: center;
+}
+
+.features .main-content .desc {
+     margin-top: 16px;
+     font-size: 1.6rem;
+     font-weight: 400;
+     line-height: 1.75;
+     color: #5f5b53;
+}
+
+.features .main-content .btn {
+     margin-top: 32px;
+     min-width: 137px;
+     padding: 11px 0;
+     font-size: 1.6rem;
+     font-weight: 600;
+     line-height: 1.75;
+     color: #fff;
+}
+
+.features .body.lv2 {
+     margin-top: 200px;
+     flex-direction: row-reverse;
+}
+
+.features .body.lv2 .main-content {
+     width: 48.71%;
+     justify-content: center;
+}
+
+.features .body.lv2 img {
+     margin-top: 0;
+     width: 470px;
+     height: 440px;
+     border-radius: 20px;
 }
